@@ -1,0 +1,18 @@
+{
+	"Print to console": {
+		"prefix": "cl",
+		"body": [
+			"console.log(${1:/* thing you want to see! */});",
+			"$0"
+		],
+		"description": "Logs output to console."
+	},
+	"Advance Debugging Technique": {
+		"prefix": "cd",
+		"body": [
+			"console.log($TM_LINE_NUMBER);",
+			"$0"
+		],
+		"description": "Log to console which lines where executed."
+	},
+}
