@@ -15,4 +15,40 @@
 		],
 		"description": "Log to console which lines where executed."
 	},
+	"React useState Hook": {
+		"prefix": "rus",
+		"body": [
+			"const [${1:state}, use${1/(.*)/${1:/capitalize}/}] = React.useState(${2:\"initialState\"});",
+			"$0"
+		],
+		"description": "Creates a useState hook."
+	},
+	"React useEffect Hook": {
+		"prefix": "rue",
+		"body": [
+			"React.useEffect(() => {",
+			"\t$1",
+			"\treturn () => {};",
+			"}, [$2]);",
+			"$0"
+		],
+		"description": "Creates a useEffect hook."
+	},
+	"Import React": {
+		"prefix": "imr",
+		"body": [
+			"import React from \"react\";",
+			"$0"
+		],
+		"description": "Imports React."
+	},
+	"React Functional Component": {
+		"prefix": "rfc",
+		"body": [
+			"export default function $TM_FILENAME_BASE() {",
+			"\t<div>$TM_FILENAME_BASE Works!</div>;",
+			"}",
+			"$0"
+		]
+	}
 }
