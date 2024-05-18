@@ -5,7 +5,7 @@
 			"console.log(${1:/* thing you want to see! */});",
 			"$0"
 		],
-		"description": "Log output to console."
+		"description": "Log output to console"
 	},
 	"Advance Debugging Technique": {
 		"prefix": "cd",
@@ -13,15 +13,33 @@
 			"console.log($TM_LINE_NUMBER);",
 			"$0"
 		],
-		"description": "Log to console which lines where executed."
+		"description": "Log to console which lines where executed"
+	},
+	"Create a Function": {
+		"prefix": "fn",
+		"body": [
+			"function ${1:procedure}(${2:parameter}) {",
+			"\t$0",
+			"}",
+		],
+		"description": "Create a named function using function declaration syntax"
+	},
+	"Create an Arrow Function": {
+		"prefix": "af",
+		"body": [
+			"const ${1:procedure} = (${2:parameter}) => {",
+			"\t$0",
+			"}",
+		],
+		"description": "Create an arrow function"
 	},
 	"React useState Hook": {
 		"prefix": "rus",
 		"body": [
-			"const [${1:state}, use${1/(.*)/${1:/capitalize}/}] = React.useState(${2:\"initialState\"});",
+			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = React.useState(${2:\"initialState\"});",
 			"$0"
 		],
-		"description": "Create a useState hook."
+		"description": "Create a useState hook"
 	},
 	"React useEffect Hook": {
 		"prefix": "rue",
@@ -32,7 +50,7 @@
 			"}, [$2]);",
 			"$0"
 		],
-		"description": "Create a useEffect hook."
+		"description": "Create a useEffect hook"
 	},
 	"Import React": {
 		"prefix": "imr",
@@ -40,7 +58,7 @@
 			"import React from \"react\";",
 			"$0"
 		],
-		"description": "Import React."
+		"description": "Import React"
 	},
 	"React Functional Component": {
 		"prefix": "rfc",
@@ -60,6 +78,6 @@
 			"}",
 			"$0"
 		],
-		"description": "Creates a Next.js page component."
+		"description": "Creates a Next.js page component"
 	},
 }
